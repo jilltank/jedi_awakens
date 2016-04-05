@@ -2,13 +2,13 @@
 
 $.ajax({
   dataType: "json",
-  url: "http://ajediempireawakens.herokuapp.com/",
+  url: "http://ajediempireawakens.herokuapp.com",
   data: data,
   success: success
 });
 
 function character () {
-    $.getJSON( "api/v1/generator.json", function( data ) {
+    $.getJSON( "/api/v1/generator.json", function( data ) {
       var results = ""
       $.each( data, function( key, val ) {
         if (key === "character") {
@@ -21,7 +21,7 @@ function character () {
 };
 
 function droid () {
-    $.getJSON( "api/v1/generator.json", function( data ) {
+    $.getJSON( "/api/v1/generator.json", function( data ) {
       var results = ""
       $.each( data, function( key, val ) {
         if (key === "droid") {
@@ -34,7 +34,7 @@ function droid () {
 };
 
 function vehicle () {
-    $.getJSON( "api/v1/generator.json", function( data ) {
+    $.getJSON( "/api/v1/generator.json", function( data ) {
       var results = ""
       $.each( data, function( key, val ) {
         if (key === "vehicle") {
@@ -47,7 +47,7 @@ function vehicle () {
 };
 
 function quote () {
-    $.getJSON( "api/v1/generator.json", function( data ) {
+    $.getJSON( "/api/v1/generator.json", function( data ) {
       var results = ""
       $.each( data, function( key, val ) {
         if (key === "quote") {
@@ -60,7 +60,7 @@ function quote () {
 };
 
 function planet () {
-    $.getJSON( "api/v1/generator.json", function( data ) {
+    $.getJSON( "/api/v1/generator.json", function( data ) {
       var results = ""
       $.each( data, function( key, val ) {
         if (key === "planet") {
@@ -73,7 +73,7 @@ function planet () {
 };
 
 function species () {
-    $.getJSON( "api/v1/generator.json", function( data ) {
+    $.getJSON( "/api/v1/generator.json", function( data ) {
       var results = ""
       $.each( data, function( key, val ) {
         if (key === "species") {
