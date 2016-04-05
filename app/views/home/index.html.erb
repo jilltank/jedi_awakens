@@ -3,10 +3,12 @@
 $.ajax({
   dataType: "json",
   url: "http://ajediempireawakens.herokuapp.com/",
+  data: data,
+  success: success
 });
 
 function character () {
-    $.getJSON( "http://ajediempireawakens.herokuapp.com/api/v1/generator.json", function( data ) {
+    $.getJSON( "api/v1/generator.json", function( data ) {
       var results = ""
       $.each( data, function( key, val ) {
         if (key === "character") {
@@ -19,7 +21,7 @@ function character () {
 };
 
 function droid () {
-    $.getJSON( "http://ajediempireawakens.herokuapp.com/api/v1/generator.json", function( data ) {
+    $.getJSON( "api/v1/generator.json", function( data ) {
       var results = ""
       $.each( data, function( key, val ) {
         if (key === "droid") {
@@ -32,7 +34,7 @@ function droid () {
 };
 
 function vehicle () {
-    $.getJSON( "http://ajediempireawakens.herokuapp.com/api/v1/generator.json", function( data ) {
+    $.getJSON( "api/v1/generator.json", function( data ) {
       var results = ""
       $.each( data, function( key, val ) {
         if (key === "vehicle") {
@@ -45,7 +47,7 @@ function vehicle () {
 };
 
 function quote () {
-    $.getJSON( "http://ajediempireawakens.herokuapp.com/api/v1/generator.json", function( data ) {
+    $.getJSON( "api/v1/generator.json", function( data ) {
       var results = ""
       $.each( data, function( key, val ) {
         if (key === "quote") {
@@ -58,7 +60,7 @@ function quote () {
 };
 
 function planet () {
-    $.getJSON( "http://ajediempireawakens.herokuapp.com/api/v1/generator.json", function( data ) {
+    $.getJSON( "api/v1/generator.json", function( data ) {
       var results = ""
       $.each( data, function( key, val ) {
         if (key === "planet") {
@@ -71,7 +73,7 @@ function planet () {
 };
 
 function species () {
-    $.getJSON( "http://ajediempireawakens.herokuapp.com/api/v1/generator.json", function( data ) {
+    $.getJSON( "api/v1/generator.json", function( data ) {
       var results = ""
       $.each( data, function( key, val ) {
         if (key === "species") {
