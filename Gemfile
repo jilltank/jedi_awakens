@@ -15,7 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'faker'
 gem 'responders'
-gem 'active_model_serializers', :github => 'git@github.com:rails-api/active_model_serializers.git'
+gem 'active_model_serializers', :github => 'rails-api/active_model_serializers.git'
 gem 'bootstrap-sass'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
