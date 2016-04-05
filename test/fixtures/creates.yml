@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  character: MyString
+  droid: MyString
+  planet: MyString
+  quote: MyString
+  species: MyString
+  vehicle: MyString
+
+two:
+  character: MyString
+  droid: MyString
+  planet: MyString
+  quote: MyString
+  species: MyString
+  vehicle: MyString
