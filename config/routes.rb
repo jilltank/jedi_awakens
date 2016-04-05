@@ -1,14 +1,11 @@
 Rails.application.routes.draw do
 
+  root 'home#index'
+
   namespace :api do
     namespace :v1 do
-      resources :vehicles
-      resources :droids
-      resources :characters
-      resources :species
-      resources :planets
-      resources :quotes
-      resources :generator
+      resources :vehicles, :droids, :characters, :species, :planets, :quotes,  only: [:index, :show]
+      resources :generator, only: [:index]
     end
   end
 
