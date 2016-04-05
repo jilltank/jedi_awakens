@@ -16,6 +16,24 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+#logo{
+	height: 190px;
+}
 .center-it{
 	text-align: center;
+}
+.well {
+	height: 180px;
+}
+#footer{
+	text-align: center;
+	font-style: italic;
+	font-size: 10px;
+	bottom:5;
+}
+#api{
+	position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1rem;
 }

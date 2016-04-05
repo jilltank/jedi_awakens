@@ -1,0 +1,109 @@
+<script type="text/javascript">
+
+$.ajax({
+  dataType: "json",
+  url: "http://ajediempireawakens.herokuapp.com/",
+});
+
+function character () {
+    $.getJSON( "api/v1/generator.json", function( data ) {
+      var results = ""
+      $.each( data, function( key, val ) {
+        if (key === "character") {
+            results = "<h1 id='" + key + "'>" + val + "</h1>";
+        };
+      });
+     
+      $('.results').html(results);
+    });
+};
+
+function droid () {
+    $.getJSON( "api/v1/generator.json", function( data ) {
+      var results = ""
+      $.each( data, function( key, val ) {
+        if (key === "droid") {
+            results = "<h1 id='" + key + "'>" + val + "</h1>";
+        };
+      });
+     
+      $('.results').html(results);
+    });
+};
+
+function vehicle () {
+    $.getJSON( "api/v1/generator.json", function( data ) {
+      var results = ""
+      $.each( data, function( key, val ) {
+        if (key === "vehicle") {
+            results = "<h1 id='" + key + "'>" + val + "</h1>";
+        };
+      });
+     
+      $('.results').html(results);
+    });
+};
+
+function quote () {
+    $.getJSON( "api/v1/generator.json", function( data ) {
+      var results = ""
+      $.each( data, function( key, val ) {
+        if (key === "quote") {
+            results = "<h1 id='" + key + "'>" + val + "</h1>";
+        };
+      });
+     
+      $('.results').html(results);
+    });
+};
+
+function planet () {
+    $.getJSON( "api/v1/generator.json", function( data ) {
+      var results = ""
+      $.each( data, function( key, val ) {
+        if (key === "planet") {
+            results = "<h1 id='" + key + "'>" + val + "</h1>";
+        };
+      });
+      
+      $('.results').html(results);
+    });
+};
+
+function species () {
+    $.getJSON( "api/v1/generator.json", function( data ) {
+      var results = ""
+      $.each( data, function( key, val ) {
+        if (key === "species") {
+            results = "<h1 id='" + key + "'>" + val + "</h1>" ;
+        };
+      });
+     
+      $('.results').html(results);
+    });
+};
+
+</script>
+
+<h4>Click the buttons to generate your Star Wars item</h4>
+<br><br>
+<div class="container">
+<% people = ["boba", "r2", "han", "stormtrooper", "vader", "chewie"] %>
+  <% people.each do |p| %>
+    <div class="col-md-2">
+      <%= image_tag "#{p}" + ".png" %>
+    </div>
+  <% end %>
+<% actions = ["character", "droid", "vehicle", "quote", "planet", "species"] %>
+<% actions.each do |a| %>
+  <div class="col-md-2">
+    <button class="btn btn-success" type="button" onclick="<%= "#{a}" %>()"><%= "#{a}" %></button>
+  </div>
+<% end %>
+</div>
+<br><br>
+<div class="col-md-8 col-md-offset-2">
+<div class="well">
+  <div class="results"></div>
+</div>
+</div>

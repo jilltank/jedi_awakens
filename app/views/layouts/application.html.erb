@@ -7,10 +7,45 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="center-it"><%= image_tag "jedi-awakens.png" %></div>
-<hr>
+	<div><%= image_tag "jedi-awakens.png", id: "logo" %></div>
+		<div id="api">
+	<button class="btn btn-info" data-toggle="modal" data-target="#apiModal">API</button><%= image_tag "leia.png"%>
+	</div>
+	<hr>
 
-<%= yield %>
+	<div class="container center-it">
+		<%= yield %>
+	</div>
 
-</body>
+	<div id="footer">in case you were wondering, Disney owns all the Star Wars stuff</div>
+
+		<div class="modal fade" id="apiModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">API Endpoints</h4>
+		      </div>
+		      <div class="modal-body">
+		      	This API contains multiple endpoints that will return an array of data, including:
+		        <p>/api/v1/characters.json</p>
+		        <p>/api/v1/droids.json</p>
+		        <p>/api/v1/vehicles.json</p>
+		        <p>/api/v1/quotes.json</p>
+		        <p>/api/v1/planets.json</p>
+		        <p>/api/v1/species.json</p>
+		        <br>
+		        ....And my personal favorite, a random generator:
+		        <p>/api/v1/generator.json</p>
+
+		        Enjoy!
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+	</body>
 </html>
