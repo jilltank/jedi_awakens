@@ -9,6 +9,8 @@ class Api::V1::PlanetsController < ApplicationController
 		respond_with Planet.find(params[:id])
 	end
 
+	# The rest of these methods are being kept for potential future iterations
+
 	def create
 		respond_with Planet.create(planet_params)
 	end

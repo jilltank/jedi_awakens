@@ -9,6 +9,8 @@ class Api::V1::CharactersController < ApplicationController
 		respond_with Character.find(params[:id])
 	end
 
+	# The rest of these methods are being kept for potential future iterations
+
 	def create
 		respond_with Character.create(character_params)
 	end

@@ -9,6 +9,8 @@ class Api::V1::SpeciesController < ApplicationController
 		respond_with Species.find(params[:id])
 	end
 
+	# The rest of these methods are being kept for potential future iterations
+
 	def create
 		respond_with Species.create(species_params)
 	end

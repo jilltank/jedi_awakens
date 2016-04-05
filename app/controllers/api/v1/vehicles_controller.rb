@@ -9,6 +9,8 @@ class Api::V1::VehiclesController < ApplicationController
 		respond_with Vehicle.find(params[:id])
 	end
 
+	# The rest of these methods are being kept for potential future iterations
+
 	def create
 		respond_with Vehicle.create(vehicle_params)
 	end

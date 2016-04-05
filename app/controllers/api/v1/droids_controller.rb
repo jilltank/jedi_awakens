@@ -9,6 +9,8 @@ class Api::V1::DroidsController < ApplicationController
 		respond_with Droid.find(params[:id])
 	end
 
+	# The rest of these methods are being kept for potential future iterations
+
 	def create
 		respond_with Droid.create(droid_params)
 	end
