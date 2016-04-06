@@ -1,28 +1,29 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I made a Star Wars API. It only supports GET requests. It's free to use, but if you use it too much, I will take it down. Or Heroku will. Whatever.
 
-Things you may want to cover:
+Endpoints:
+These ones will also navigate to, for example, /api/v1/planets/10.json
 
-* Ruby version
+/api/v1/characters.json
 
-* System dependencies
+/api/v1/droids.json
 
-* Configuration
+/api/v1/vehicles.json
 
-* Database creation
+/api/v1/quotes.json
 
-* Database initialization
+/api/v1/planets.json
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+/api/v1/species.json
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This one will only navigate here:
+
+/api/v1/generator.json
+
+
+If you have questions, you can tweet me. @jill_tank
+
+
+May the force be with you!
