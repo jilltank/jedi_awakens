@@ -1,4 +1,4 @@
-== README
+== A JEDI EMPIRE AWAKENS
 
 I made a Star Wars API. It only supports GET requests. It's free to use, but if you use it too much, I will take it down. Or Heroku will. Whatever.
 
