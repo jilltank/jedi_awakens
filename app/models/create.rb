@@ -10,35 +10,29 @@ class Create
 	end
 
 	def character
-		foo = Character.count
-		firstname = Character.find(rand(1..foo)).name.split(" ")[0]
-		lastname = Character.find(rand(1..foo)).name.split(" ")[-1]
+		firstname = Character.find(rand(1..Character.count)).name.split(" ")[0]
+		lastname = Character.find(rand(1..Character.count)).name.split(" ")[-1]
 		@character = firstname + " " + lastname
 	end
 
 	def droid
-		foo = Droid.count
-		@droid = Droid.find(rand(1..foo)).name
+		@droid = Droid.find(rand(1..Droid.count)).name
 	end
 
 	def planet
-		foo = Planet.count
-		@planet = Planet.find(rand(1..foo)).name
+		@planet = Planet.find(rand(1..Planet.count)).name
 	end
 
 	def quote
-		foo = Quote.count
-		@quote = Quote.find(rand(1..foo)).saying
+		@quote = Quote.find(rand(1..Quote.count)).saying
 	end
 
 	def species
-		foo = Species.count
-		@species = Species.find(rand(1..foo)).name
+		@species = Species.find(rand(1..Species.count)).name
 	end
 
 	def vehicle
-		foo = Vehicle.count
-		@vehicle = Vehicle.find(rand(1..foo)).name
+		@vehicle = Vehicle.find(rand(1..Vehicle.count)).name
 	end
 
 end
