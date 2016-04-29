@@ -17,6 +17,8 @@ gem 'faker'
 gem 'responders'
 gem 'active_model_serializers',:github => 'rails-api/active_model_serializers'
 gem 'bootstrap-sass'
+gem 'doorkeeper'
+gem 'devise'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

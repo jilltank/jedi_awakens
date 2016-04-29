@@ -19,6 +19,15 @@
 	</script>
 
 	<div><%= image_tag "jedi-awakens-white.png", id: "logo" %></div>
+	<div class="center-it">
+		<% if user_signed_in? %>
+			<%= "Hello, #{current_user}" %>
+			<%= link_to "Edit Profile", edit_user_registration_path %>
+			<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+		<% else %>
+			<%= link_to "Sign Up", new_user_registration_path %>
+			<%= link_to "Forgot Password", new_user_password_path %>
+		<% end %>
 		<div id="api">
 	<button class="btn btn-info" data-toggle="modal" data-target="#apiModal">API</button><%= image_tag "leia.png"%>
 	</div>

@@ -1,5 +1,6 @@
 class Api::V1::SpeciesController < ApplicationController
 	respond_to :json
+	before_action :doorkeeper_authorize!
 
 	def index
 		respond_with Species.all
